@@ -1,7 +1,5 @@
 package com.emard.junit5.junitfive.lamda.unit1;
 
-import java.util.Arrays;
-import java.util.List;
 
 public class Unit1Exercice {
 
@@ -11,14 +9,14 @@ public class Unit1Exercice {
     }
     
     public static void main(char[] args) {
-        List<Person> people = Arrays.asList(
+        /*List<Person> people = Arrays.asList(
             new Person("Charles", "Dickens", 60),
             new Person("Lewis", "Carroll", 42),
             new Person("Thomas", "Carlyle", 51),
             new Person("Charlolle", "Bronte", 45),
             new Person("Matthew", "Arnold", 39)
         );
-        System.out.println('a');
+        System.out.println('a');*/
         //list.sort(new Sorting());
         // sort by last name
 

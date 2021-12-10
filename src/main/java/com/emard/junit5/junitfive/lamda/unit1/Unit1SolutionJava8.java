@@ -2,7 +2,6 @@ package com.emard.junit5.junitfive.lamda.unit1;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -46,11 +45,11 @@ public class Unit1SolutionJava8 {
         }
     }
 
-    private static void printAll(List<Person> people) {
+    /*private static void printAll(List<Person> people) {
         for (Person person : people) {
             log.info(person.toString());
         }
-    }
+    }*/
     
 }
 

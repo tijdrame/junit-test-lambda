@@ -1,8 +1,8 @@
-package com.emard.junit5.junitfive.lamda.unit2;
+package com.emard.junit5.junitfive.lamda.unit3;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 import com.emard.junit5.junitfive.lamda.unit1.Person;
@@ -25,17 +25,18 @@ public class MethodReferenceExample2 {
         log.info("==============================================+++++++++++++++++++++++++++++++++++++++++++++++++");
 
         //Create a method that prints all people that have last name beginning with C
-        printBeginByC(people, p-> p.getLastName().startsWith("C"));
+        printBeginByC(people, p->true, System.out::println); //p-> p.getLastName().startsWith("C")
         log.info("==============================================+++++++++++++++++++++++++++++++++++++++++++++++++");
 
     }
 
     //private static void printBeginByC(List<Person> people, Condition c) {
-    private static void printBeginByC(List<Person> people, Predicate<Person> c) {
+    private static void printBeginByC(List<Person> people, Predicate<Person> c, Consumer<Person> consumer) {
         for (Person person : people) {
             //if(person.getLastName().startsWith("C")){
             if(c.test(person)){
-                log.info(person.toString());
+                //log.info(person.toString());
+                consumer.accept(person);
             }
         }
     }

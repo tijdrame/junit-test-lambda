@@ -1,4 +1,4 @@
-package com.emard.junit5.junitfive.lamda.unit2;
+package com.emard.junit5.junitfive.lamda.unit3;
 
 import lombok.extern.slf4j.Slf4j;
 
