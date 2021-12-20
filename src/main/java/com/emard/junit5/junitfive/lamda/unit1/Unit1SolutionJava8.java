@@ -53,7 +53,7 @@ public class Unit1SolutionJava8 {
     
 }
 
-interface Condition {
+/*interface Condition {
     boolean test(Person p);
-}
+}*/
 
